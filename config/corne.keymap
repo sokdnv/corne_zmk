@@ -83,10 +83,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3       &kp NUMBER_4  &kp N5            &kp NUMBER_6  &kp N7        &kp N8         &kp N9         &kp N0     &none
-&none  &kp EXCLAMATION  &kp AT_SIGN   &kp DOUBLE_QUOTES  &kp SQT       &kp UNDERSCORE    &kp PLUS      &kp QUESTION  &kp ASTERISK   &kp MINUS      &kp EQUAL  &none
-&none  &kp TILDE        &kp GRAVE     &kp HASH           &kp DOLLAR    &kp PERCENT       &trans        &kp CARET     &kp AMPERSAND  &kp BACKSLASH  &kp PIPE   &none
-                                      &trans             &trans        &trans            &trans        &trans        &trans
+&none  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3       &kp NUMBER_4  &kp N5            &kp NUMBER_6  &kp N7         &kp N8        &kp N9         &kp N0     &none
+&none  &kp EXCLAMATION  &kp AT_SIGN   &kp DOUBLE_QUOTES  &kp SQT       &kp UNDERSCORE    &kp PLUS      &kp QUESTION   &kp ASTERISK  &kp MINUS      &kp EQUAL  &none
+&none  &kp TILDE        &kp GRAVE     &kp HASH           &kp DOLLAR    &kp PERCENT       &trans        &kp BACKSLASH  &kp CARET     &kp AMPERSAND  &kp PIPE   &none
+                                      &trans             &trans        &trans            &trans        &trans         &trans
             >;
         };
 
