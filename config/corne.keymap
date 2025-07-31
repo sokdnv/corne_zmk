@@ -52,12 +52,12 @@
         };
 
         lsa_enter {
-            bindings = <&kp LS(LA(ENTER))>;
+            bindings = <&kp A>;
             key-positions = <36 41>;
         };
 
         layer_2 {
-            bindings = <&kp A>;
+            bindings = <&kp L>;
             key-positions = <38 40>;
             require-prior-idle-ms = <0>;
             timeout-ms = <0>;
