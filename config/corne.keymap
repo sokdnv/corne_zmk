@@ -64,6 +64,18 @@
         };
     };
 
+    behaviors {
+        fast_hold: fast_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "FAST_HOLD";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -75,10 +87,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E         &kp R            &kp T        &kp Y                  &kp U            &kp I             &kp O    &kp P          &none
-&none  &kp A  &kp S  &kp D         &kp F            &kp G        &kp H                  &kp J            &kp K             &kp L    &kp SEMICOLON  &none
-&none  &kp Z  &kp X  &kp C         &kp V            &kp B        &kp N                  &kp M            &kp COMMA         &kp DOT  &kp SLASH      &none
-                     &mt LALT TAB  &mt LGUI ESCAPE  &kp SPACE    &mt LEFT_SHIFT RETURN  &lt 1 BACKSPACE  &kp LEFT_CONTROL
+&none  &kp Q  &kp W  &kp E         &kp R            &kp T        &kp Y                  &kp U                   &kp I             &kp O    &kp P          &none
+&none  &kp A  &kp S  &kp D         &kp F            &kp G        &kp H                  &kp J                   &kp K             &kp L    &kp SEMICOLON  &none
+&none  &kp Z  &kp X  &kp C         &kp V            &kp B        &kp N                  &kp M                   &kp COMMA         &kp DOT  &kp SLASH      &none
+                     &mt LALT TAB  &mt LGUI ESCAPE  &kp SPACE    &mt LEFT_SHIFT RETURN  &fast_hold 1 BACKSPACE  &kp LEFT_CONTROL
             >;
         };
 
