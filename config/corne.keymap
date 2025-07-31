@@ -46,14 +46,21 @@
             key-positions = <2 9>;
         };
 
-        lang {
-            bindings = <&lt 2 LG(SPACE)>;
-            key-positions = <37 40>;
-        };
-
         shift_enter {
             bindings = <&kp LS(ENTER)>;
             key-positions = <38 39>;
+        };
+
+        lsa_enter {
+            bindings = <&kp LS(LA(ENTER))>;
+            key-positions = <36 41>;
+        };
+
+        layer_2 {
+            bindings = <&mo 2>;
+            key-positions = <38 40>;
+            require-prior-idle-ms = <0>;
+            timeout-ms = <0>;
         };
     };
 
@@ -98,10 +105,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp C_BRI_DEC         &kp C_BRI_UP          &kp C_VOL_DN          &kp C_VOL_UP          &trans    &trans    &kp K_PREV      &kp K_PLAY_PAUSE  &kp K_NEXT       &trans  &trans
-&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW  &trans  &trans
-&trans  &kp LS(LA(NUMBER_1))  &kp LS(LA(NUMBER_2))  &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &trans    &trans    &trans          &trans            &trans           &trans  &trans
-                                                    &bootloader           &trans                &trans    &trans    &trans          &trans
+&trans  &kp C_BRI_DEC         &kp C_BRI_UP          &kp C_VOL_DN          &kp C_VOL_UP          &kp K_MUTE    &trans    &kp K_PREV      &kp K_PLAY_PAUSE  &kp K_NEXT       &trans  &trans
+&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &trans        &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW  &trans  &trans
+&trans  &kp LS(LA(NUMBER_1))  &kp LS(LA(NUMBER_2))  &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &trans        &trans    &trans          &trans            &trans           &trans  &trans
+                                                    &bootloader           &trans                &trans        &trans    &trans          &trans
             >;
         };
     };
