@@ -57,7 +57,7 @@
         };
 
         layer_2 {
-            bindings = <&mo 2>;
+            bindings = <&kp A>;
             key-positions = <38 40>;
             require-prior-idle-ms = <0>;
             timeout-ms = <0>;
