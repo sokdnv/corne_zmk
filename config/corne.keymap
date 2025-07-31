@@ -62,6 +62,31 @@
             require-prior-idle-ms = <0>;
             timeout-ms = <0>;
         };
+
+        test_1 {
+            bindings = <&kp B>;
+            key-positions = <40 36>;
+        };
+
+        test_2 {
+            bindings = <&kp C>;
+            key-positions = <40 38>;
+        };
+
+        test_3 {
+            bindings = <&kp E>;
+            key-positions = <37 39>;
+        };
+
+        test_4 {
+            bindings = <&kp D>;
+            key-positions = <37 41>;
+        };
+
+        layer {
+            bindings = <&mo 2>;
+            key-positions = <33 34>;
+        };
     };
 
     behaviors {
