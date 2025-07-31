@@ -56,36 +56,24 @@
             key-positions = <36 41>;
         };
 
-        layer_2 {
-            bindings = <&kp A>;
-            key-positions = <40 37>;
-            require-prior-idle-ms = <0>;
-            timeout-ms = <0>;
-        };
-
         test_1 {
-            bindings = <&kp B>;
+            bindings = <&mo 2>;
             key-positions = <40 36>;
         };
 
         test_2 {
-            bindings = <&kp C>;
+            bindings = <&mo 2>;
             key-positions = <40 38>;
         };
 
         test_3 {
-            bindings = <&kp E>;
+            bindings = <&mo 2>;
             key-positions = <37 39>;
         };
 
         test_4 {
-            bindings = <&kp D>;
-            key-positions = <37 41>;
-        };
-
-        layer {
             bindings = <&mo 2>;
-            key-positions = <33 34>;
+            key-positions = <37 41>;
         };
     };
 
