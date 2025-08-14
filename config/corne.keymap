@@ -55,11 +55,6 @@
             bindings = <&kp LS(LA(ENTER))>;
             key-positions = <36 41>;
         };
-
-        hmm {
-            bindings = <&mo 2>;
-            key-positions = <40 38>;
-        };
     };
 
     behaviors {
@@ -103,7 +98,7 @@
 &none  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3       &kp NUMBER_4  &kp N5            &kp NUMBER_6  &kp N7         &kp N8        &kp N9         &kp N0     &none
 &none  &kp EXCLAMATION  &kp AT_SIGN   &kp DOUBLE_QUOTES  &kp SQT       &kp UNDERSCORE    &kp PLUS      &kp QUESTION   &kp ASTERISK  &kp MINUS      &kp EQUAL  &none
 &none  &kp TILDE        &kp GRAVE     &kp HASH           &kp DOLLAR    &kp PERCENT       &trans        &kp BACKSLASH  &kp CARET     &kp AMPERSAND  &kp PIPE   &none
-                                      &trans             &trans        &trans            &trans        &trans         &trans
+                                      &trans             &mo 2         &trans            &trans        &trans         &trans
             >;
         };
 
@@ -115,10 +110,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp C_BRI_DEC         &kp C_BRI_UP          &kp C_VOL_DN          &kp C_VOL_UP          &kp K_MUTE    &trans    &kp K_PREV      &kp K_PLAY_PAUSE  &kp K_NEXT       &trans  &trans
-&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &trans        &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW  &trans  &trans
-&trans  &kp LS(LA(NUMBER_1))  &kp LS(LA(NUMBER_2))  &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &trans        &trans    &trans          &trans            &trans           &trans  &trans
-                                                    &bootloader           &trans                &trans        &trans    &trans          &trans
+&trans  &kp C_BRI_DEC         &kp C_BRI_UP          &kp C_VOL_DN          &kp C_VOL_UP          &kp K_MUTE              &trans    &kp K_PREV      &kp K_PLAY_PAUSE  &kp K_NEXT       &trans  &trans
+&trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LS(LG(NUMBER_4))    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW  &trans  &trans
+&trans  &kp LS(LA(NUMBER_1))  &kp LS(LA(NUMBER_2))  &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &kp LS(LG(N5))          &trans    &trans          &trans            &trans           &trans  &trans
+                                                    &bootloader           &trans                &trans                  &trans    &trans          &trans
             >;
         };
     };
